@@ -7,28 +7,31 @@
     <title>Jogo da Adivinhação</title>
   </head>
   <body>
-    <main class="main-container">
-      <section>
-        <div>
-          <h1>jogo da Adivinhação</h1>
+    <main class="main-container" >
+      <section class="card1">
+        <div class=" content">
+          <h1>Jogo da Adivinhação</h1>
           <p>Adivinhe o número entre 0 e 10</p>
         </div>
 
-        <div>
-          <form>
+        <div class="main-form">
+          <form action="post">
             <input type="number" name="number" id="number" />
-            <button>Tentar</button>
+            <button onclick="handleClick(event)">Tentar</button>
           </form>
         </div>
       </section>
-      <section>
+
+      <section class="card2 disappear">
         <div>
           <h1>Acertou em 3 tentativas!</h1>
         </div>
-        <div>
-          <button>Jogar novamente</button>
+        <div class="button-reset">
+          <button onclick="restart(event)">Jogar novamente</button>
         </div>
       </section>
     </main>
+
+    <script src="./src/js/main.js"></script>
   </body>
 </html>
